@@ -1,4 +1,10 @@
 export default function Footer(){
 
-    return <footer>Footer</footer>;
+    return(
+        <footer>
+            <div id="logo">
+                Cart.
+            </div>
+        </footer>
+    )
 }
