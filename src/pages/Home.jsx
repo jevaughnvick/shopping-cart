@@ -5,7 +5,7 @@ export default function Home(){
         <Layout>
             <div id="hero">
                 <div>
-                    <h1>Get <span>Nothing</span><br></br>from "Cart"</h1>
+                    <h1>Get <span>Nothing</span><br></br>from Cart</h1>
                     <p>Cause it's fake.</p>
                 </div>
                 <img src="/src/assets/fakeremove.png" alt="Fake store" />
