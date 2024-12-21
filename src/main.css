@@ -1,7 +1,85 @@
+@font-face {
+    font-family: PoppinsBigBold;
+    src: url(./assets/Poppins/Poppins-ExtraBold.ttf);
+}
+
 :root{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+*, *::before, *::before{
+    box-sizing: border-box;
+}
+
 *{
     margin: 0;
+}
+
+picture, video, canvas, svg, img{
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select{
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p{
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+#root{
+    border: 1px solid red;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#navbar{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 3rem;
+}
+
+#logo{
+    font-family: PoppinsBigBold;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    border: 1px solid red;
+    margin-top: auto;
+}
+
+.active{
+    font-weight: bold;
 }
