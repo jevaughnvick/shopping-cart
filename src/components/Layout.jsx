@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
@@ -5,11 +6,13 @@ import { Outlet } from "react-router-dom";
 
 export default function Layout(){
 
+    const [ cartQuantity, setCartQuantity ] = useState(0);
+
     return (
         <>
-            <Navbar />
+            <Navbar cartQuantity={cartQuantity} />
             <main>
-                <Outlet />
+                <Outlet context={[ cartQuantity, setCartQuantity ]}/>
             </main>
             <Footer />
         </>
