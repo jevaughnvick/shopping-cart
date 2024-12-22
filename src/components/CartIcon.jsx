@@ -9,7 +9,11 @@ export default function CartIcon({ cartQuantity }){
                 <TiShoppingCart style={{ fontSize: "2rem" }} />
                 <p id="number-of-items">{cartQuantity}</p>
             </div>
-            <button id="checkout-btn">Check Out</button>
+            <button
+            id="checkout-btn"
+            onClick={() => alert("You thought that was gonna do something?")}>
+                Check Out
+            </button>
         </>
     )
 }
