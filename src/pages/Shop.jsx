@@ -1,9 +1,10 @@
-import Layout from "../components/Layout";
+import Items from "../components/Items";
+
 export default function Shop(){
 
     return(
-        <Layout>
-            <h1>Shop Page</h1>
-        </Layout>
+        <div id="shop-content-wrap">
+            <Items />
+        </div>
     )
 }
