@@ -37,7 +37,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #root{
-    /* border: 1px solid red; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -53,18 +52,29 @@ main{
 #hero{
     display: flex;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #hero div{
-    /* border: 1px solid red; */
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+#hero div:nth-of-type(1){
+    /* display: none; */
+}
+
+#hero div:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #hero h1{
-    font-size: 6rem;
+    font-size: 5.5rem;
     text-align: center;
 }
 
@@ -80,7 +90,8 @@ h1 span{
 }
 
 #hero img{
-    flex: 1;
+    max-width: 100%;
+    height: auto;
 }
 
 #main-section{
@@ -99,14 +110,14 @@ h1 span{
     font-size: 2rem;
     text-align: center;
     margin-bottom: 50px;
-    width: clamp(500px, 70%, 800px);
+    max-width: 800px;
 }
   
 #navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 4rem;
+    padding: 1rem 5vw;
 }
 
 #logo{
@@ -161,7 +172,7 @@ a{
     /* border: 1px solid purple; */
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 
 #items{
@@ -179,7 +190,7 @@ a{
 }
 
 #img-wrap{
-    height: 200px;
+    height: 230px;
 }
 
 .item-card img{
@@ -187,6 +198,7 @@ a{
     height: 100%;
     object-position: top;
     object-fit: cover;
+    border-radius: 5px;
 } 
 
 .item-card h3{
@@ -195,7 +207,7 @@ a{
 
 #btns-wrap{
     display: flex;
-    justify-content: space-around  ;
+    justify-content: space-around;
 }
 
 #btns-wrap button{
@@ -209,18 +221,24 @@ a{
     padding: .5rem 1rem;
     border-radius: 5px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+#btns-wrap button:nth-of-type(1){
+    font-size: 1rem;
+}
+
+#btns-wrap button:nth-of-type(2){
+    color: rgb(165, 3, 3);
+    font-size: 1.2rem;
 }
 
 #btns-wrap button:active{
     scale: .97;
 }
 
-#btns-wrap button:nth-of-type(2){
-    /* background-color: rgb(165, 3, 3); */
-    border: 1px solid rgba(0, 0, 0, 0.322);
-    color: rgb(165, 3, 3);
-    font-size: 1.2rem;
-}
+
 
 .item-card p{
     text-align: right;
@@ -229,9 +247,110 @@ a{
 footer{
     background-color: rgb(179, 169, 79);
     margin-top: auto;
-    padding: 1rem 4rem;
+    padding: 1rem 5vw;
 }
 
 .active{
     font-weight: bold;
 }
+
+@media only screen and (max-width: 1110px){
+
+    #hero{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #main-section p{
+        font-size: 1.9rem;
+    }
+}
+
+@media only screen and (max-width: 520px){
+
+    #hero h1{
+        font-size: 4.5rem;
+    }
+
+    #hero p{
+        font-size: 2rem;
+    }
+
+    #main-section h2{
+        font-size: 3.5rem;
+    }
+    
+    #main-section p{
+        font-size: 1.8rem;
+    }
+
+    #logo{
+        font-size: 3.3rem;
+    }
+}
+
+@media only screen and (max-width: 450px){
+
+    #hero h1{
+        font-size: 4rem;
+    }
+
+    #hero p{
+        font-size: 1.5rem;
+    }
+
+    #main-section h2{
+        font-size: 3rem;
+    }
+
+    #main-section p{
+        font-size: 1.5rem;
+    }
+
+    #logo{
+        font-size: 3.1rem;
+    }
+}
+
+@media only screen and (max-width: 410px){
+
+    #hero h1{
+        font-size: 3.5rem;
+    }
+
+    #main-section h2{
+        font-size: 2.5rem;
+    }
+
+    #main-section p{
+        font-size: 1.3rem;
+    }
+
+    #logo{
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (max-width: 370px){
+
+    #hero h1{
+        font-size: 2.9rem;
+    }
+
+    #main-section h2{
+        font-size: 2.2rem;
+    }
+
+    #logo{
+        font-size: 2.6rem;
+    }
+}
+
+/* @media only screen and (max-width: 330px){
+
+    #hero h1{
+        font-size: 2.5rem;
+    }
+
+
+} */
