@@ -1,6 +1,6 @@
 @font-face {
-    font-family: PoppinsBigBold;
-    src: url("./Poppins-ExtraBold.ttf");
+    font-family: "PoppinsBigBold";
+    src: url("./Poppins-ExtraBold.ttf") format('truetype');
 }
 
 :root{
