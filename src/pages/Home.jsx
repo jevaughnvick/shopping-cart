@@ -8,7 +8,7 @@ export default function Home(){
                     <p>Cause it's fake.</p>
                 </div>
                 <div>
-                    <img src="/src/assets/fakeremove.png" alt="Fake store" />
+                    <img src="public/fakeremove.png" alt="Fake store" />
                 </div>
             </div>
             <section id="main-section">
