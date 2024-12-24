@@ -160,7 +160,7 @@ nav a:hover:not(#logo){
 }
 
 #logo{
-    font-family: PoppinsBigBold;
+    font-family: "PoppinsBigBold", sans-serif;
     font-size: 3.5rem;
     line-height: 1;
     padding: 0;
