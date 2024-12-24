@@ -392,6 +392,10 @@ footer{
     #checkout-btn{
         width: 100px;
     }
+
+    #sidebar{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 370px){
