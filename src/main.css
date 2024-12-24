@@ -293,7 +293,7 @@ nav a:hover:not(#logo){
 }
 
 footer{
-    background-color: rgb(179, 169, 79);
+    background-color: #eeeeee;
     margin-top: auto;
     padding: 1rem 5vw;
 }
